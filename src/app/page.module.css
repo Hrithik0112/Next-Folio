@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 100px;
+  /* background: #000; */
 }
 
 .item {
@@ -13,7 +14,9 @@
 
 .title {
   font-size: 72px;
+  /* margin-left: 50px; add if not having properr gap */
   background: linear-gradient(to bottom, #194c33, #bbb);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -37,4 +40,5 @@
 .desc {
   font-size: 24px;
   font-weight: 300;
+  /* margin-left: 50px;  add if not having a proper gap*/
 }
