@@ -59,16 +59,19 @@ const Login = ({ url }) => {
       <Link className={styles.link} href="/dashboard/register">
         Create new account
       </Link>
-      {/* <button
+    </div>
+  );
+};
+
+export default Login;
+
+{
+  /* <button
         onClick={() => {
           signIn("github");
         }}
         className={styles.button + " " + styles.github}
       >
         Login with Github
-      </button> */}
-    </div>
-  );
-};
-
-export default Login;
+      </button> */
+}

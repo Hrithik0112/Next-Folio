@@ -33,7 +33,7 @@ const Dashboard = () => {
   // }, []);
 
   const session = useSession();
-  console.log(session);
+  // console.log(session);
 
   const router = useRouter();
 
@@ -41,7 +41,7 @@ const Dashboard = () => {
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
   const { data, mutate, error, isLoading } = useSWR(
-    `/api/post?username=${session?.data?.user.name}`,
+    `/api/posts?username=${session?.data?.user.name}`,
     fetcher
   );
 
